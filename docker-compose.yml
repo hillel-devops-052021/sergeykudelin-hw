@@ -2,7 +2,7 @@ version: "3.8"
 services:
     frontend:
         build: ./frontend
-        image: sergeykudelin/hillel-frontend:0.0.4
+        image: sergeykudelin/hillel-frontend:0.0.6
         ports:
             - "8080:80"
         networks:
