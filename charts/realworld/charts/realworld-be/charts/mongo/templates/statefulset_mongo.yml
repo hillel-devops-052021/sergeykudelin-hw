@@ -26,7 +26,7 @@ spec:
         - containerPort: 27017                                
         imagePullPolicy: Always
         volumeMounts:
-        - name: mongo-pvc-mongo-realworld-0
+        - name: mongo-pvc
           mountPath: /data/db
   volumeClaimTemplates:
   - metadata:

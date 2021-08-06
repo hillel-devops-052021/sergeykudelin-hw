@@ -14,4 +14,3 @@ spec:
             name: admin-mongo
             port:
               number: 8082
-
