@@ -1,0 +1,5 @@
+FROM node:lts as build
+COPY . .
+RUN npm install && REACT_APP_BACKEND_URL="http://backend.realworld.local.io/api" npm run build
+FROM nginx:latest
+COPY --from=build ./build /usr/share/nginx/html
